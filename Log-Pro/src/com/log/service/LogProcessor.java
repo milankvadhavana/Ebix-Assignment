@@ -16,7 +16,7 @@ public class LogProcessor extends Thread {
 		for(String line : logs) {
 			if(line.contains("INFO")) {
 				infoCount++;
-			}else if(line.contains("Error")) {
+			}else if(line.contains("ERROR")) {
 				errorCount++;
 			}else if(line.contains("WARNING")) {
 				warningCount++;
